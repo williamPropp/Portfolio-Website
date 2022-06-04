@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>willpropp.com</title>
     <link rel="stylesheet" href="css/main.css">
@@ -10,43 +9,70 @@
 <body>
     <div class="navbar">
         <div class="container">
-            <a href="index.html">will<span>propp</span>.com</a>
+            <a class="logo" href="#">will<span>propp</span>.com</a>
 
-            <img id="mobile-nav-dropdown" class="mobile-nav-menu" src="icons/new-menu.svg" alt="Open Navigation Dropdown">
+            <img id="mobile-cta" class="mobile-menu" src="icons/menu.svg" alt="Open Navigation">
 
             <nav>
-                <img id="mobile-nav-exit" class="mobile-nav-menu-exit" src="icons/exit.svg" alt="Close Navigation Dropdown">
-
-                <ul class="center-nav">
-                    <li class="current-page"> <a href="index.html">about</a> </li>
-                    <li> <a href="projects.html">projects</a> </li>
-                    <li> <a href="resume.html">resume</a> </li> 
+                <img id="mobile-exit" class="mobile-menu-exit" src="icons/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
                 </ul>
 
-                <ul class="right-nav">
-                    <li> <a href="https://github.com/williamPropp">github</a> </li>
-                    <li> <a href="contact.html">contact</a> </li>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Github</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 
-    work: <a href="https://github.com/williamPropp">my github</a>
-
     <section class="hero">
+        hero goes here
+    </section>
+
+    <section class="contact-section">
         <div class="container">
-            <div class="left-col">
-                <p class = "subhead">
-                    this is the left column 
-                </p>
-            </div>
-            <div class="right-col">
-                <p class = "subhead">
-                    this is the right column
-                </p>
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="name">Email</label>
+                    <input type="text" id="email" name="email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
             </div>
         </div>
     </section>
-    <a href="pages/games/safe-breakers.html">safe-breakers</a>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
 </body>
 </html>
