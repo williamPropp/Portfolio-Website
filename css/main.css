@@ -18,6 +18,10 @@ body {
   text-transform: none;
 }
 
+.hero img {
+  width: 300px;
+}
+
 .navbar {
   background: var(--primary);
   padding: 1em;
@@ -165,6 +169,22 @@ nav li a:hover {
   float: right;
   margin: .5em;
   cursor: pointer;
+}
+
+.project-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.project-wrapper img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  padding: 0.5em;
 }
 
 @media only screen and (min-width: 1000px) {
