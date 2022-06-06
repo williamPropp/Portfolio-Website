@@ -145,6 +145,10 @@ nav li a:hover {
 
 .hero .portrait-pic img {
   width: 400px;
+  box-shadow: 10px 10px 0 var(--primary);
+  -moz-box-shadow: 10px 10px 0 var(--primary);
+  -webkit-box-shadow: 10px 10px 0 var(--primary);
+  -khtml-box-shadow: 10px 10px 0 var(--primary);
 }
 
 .hero .hi-message {

@@ -137,12 +137,17 @@ nav {
         padding-right: 4em;
         img {
             width: 400px;
+            box-shadow: 10px 10px 0 var(--primary);
+            -moz-box-shadow: 10px 10px 0 var(--primary);
+            -webkit-box-shadow: 10px 10px 0 var(--primary);
+            -khtml-box-shadow: 10px 10px 0 var(--primary);
         }
     }
     .hi-message {
         padding-top: 3em;
         span {
             text-align: left;
+            // text-shadow: 2px 2px var(--primary);
         }
         
         .hi {
