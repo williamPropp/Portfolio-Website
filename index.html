@@ -36,7 +36,6 @@
 
         const mobileBtn = document.getElementById('mobile-cta');
         const mobileBtnExit = document.getElementById('mobile-exit');
-        const blah = 0;
         const nav = document.querySelector('nav');
 
         mobileBtn.addEventListener('click', () => {
@@ -52,10 +51,29 @@
     </script>
 
     <section class="hero">
-        <img src="images/picofme.jpg" alt="picture of me">
+        <div class="portrait-pic">
+            <img src="images/picofme.jpg" alt="picture of me">
+        </div>
+        <div class="hi-message">
+            <div class="hi">
+                <span>Hi,</span>
+            </div>
+            <div class="im-will-propp">
+                <span>I'm Will</span>
+            </div>
+            <div class="aspiration">
+                <span>and I'm an aspiring programmer</span>
+            </div>
+            <div class="projects-button">
+                <a href="#projects">View My Work</a>
+            </div>
+        </div>
     </section>
 
     <section id="projects" class="projects">
+        <header>
+            Projects
+        </header>
         <div class="project-wrapper">
             <div class="safe-breakers">
                 <a href="https://williampropp.github.io/Safe-Breakers/">
