@@ -13,7 +13,7 @@
 
             <img id="mobile-cta" class="mobile-menu" src="icons/menu.svg" alt="Open Navigation">
 
-            <nav>
+            <nav id="nav-buttons">
                 <img id="mobile-exit" class="mobile-menu-exit" src="icons/exit.svg" alt="Close Navigation">
                 
                 <ul class="primary-nav">
@@ -36,6 +36,7 @@
 
         const mobileBtn = document.getElementById('mobile-cta');
         const mobileBtnExit = document.getElementById('mobile-exit');
+        const mobileNavBtns = document.getElementById('nav-buttons');
         const nav = document.querySelector('nav');
 
         mobileBtn.addEventListener('click', () => {
@@ -46,13 +47,15 @@
             nav.classList.remove('menu-btn');
         })
 
-
+        mobileNavBtns.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
 
     </script>
 
     <section class="hero">
         <div class="portrait-pic">
-            <img src="images/picofme.jpg" alt="picture of me">
+            <img src="images/portrait-img.jpg" alt="picture of me">
         </div>
         <div class="hi-message">
             <div class="hi">
@@ -71,9 +74,7 @@
     </section>
 
     <section id="projects" class="projects">
-        <header>
-            Projects
-        </header>
+        <h2>Projects</h2>
         <div class="project-wrapper">
             <div class="safe-breakers">
                 <a href="https://williampropp.github.io/Safe-Breakers/">
@@ -128,7 +129,8 @@
     </section>
 
     <section id="about" class="about">
-        about goes here
+        <h2>About</h2>
+        <p>about goes here</p> 
     </section>
 
     <section id="contact" class="contact-section">
