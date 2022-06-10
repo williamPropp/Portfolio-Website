@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angler's Deep</title>
+</head>
+<body>
+    <h1>Angler's Deep</h1>
+    <div class="game-container">
+        <iframe class="game" src="https://williampropp.github.io/Anglers-Deep/" frameBorder="0"></iframe>
+    </div>
+    <p class="game-description">
+        I worked on Angler's deep with a team of six for the duration of my second to last game design capstone course. I was the lead programmer, and created most of the game manager systems and UI interaction.
+    </p>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+        body {
+            color: white;
+            background: #1d355a;
+            font-family: "Open Sans";
+        }
+        h1 {
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .game {
+            display: none;
+        }
+        @media only screen and (min-width: 825px) {
+            .game-container {
+                position: relative; 
+                padding-bottom: 58.55%;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+             }
+            .game {
+                
+                display: flex;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</body>
+</html>
