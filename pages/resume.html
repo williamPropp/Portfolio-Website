@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+        :root {
+            --light-primary: #e3e4e0;
+            --primary: #c7c7bb;
+            --dark-primary: #aaaa9f;
+            --primary-text-color: #3e423d;
+
+            --light: 300;
+            --regular: 400;
+            --medium: 500;
+            --bold: 700;
+        }
+
+        body {
+            max-width: 1000px;
+            margin: auto;
+            /* margin-right: 20vw; */
+            padding: 5vh 10vh; 
+            font-family: "Open Sans";
+            background: var(--dark-primary);
+        }
+
+        .resume {
+            padding-right: 15vw;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a.exit {
+            display: flex;
+            justify-content: end;
+        }
+
+        ul.contact-info {
+            margin: 0;
+            padding: 1vh 0;
+            list-style-type: none;
+        }
+
+        img.linked-in, img.github {
+            width: 2em;
+            padding-right: 0.5vw;
+        }
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            color: var(--light-primary);
+            font-weight: 700;
+            font-size: 30pt;
+            line-height: 1.0;
+            page-break-after: avoid;
+            /* text-align: left; */
+        }
+
+        h2 {
+            padding-top: 24pt;
+            color: var(--light-primary);
+            font-weight: 700;
+            font-size: 1.4em;
+            padding-bottom: 5pt;
+            line-height: 1.0;
+            page-break-after: avoid;
+            /* text-align: left; */
+        }
+        h3 {
+            margin-bottom: 0;
+            font-size: 1.2em;
+            font-weight: var(--medium);
+            color: black;
+        }
+
+        ul.skills {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            list-style-type: disc;
+        }
+
+        span.dash {
+            color: black;
+        }
+
+        span.job-title {
+            color: var(--light-primary);
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        p.timeframe {
+            margin-top: 0;
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.9em;
+            font-weight: var(--regular);
+        }
+
+        ul.job-duties {
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <a class="exit" href="../index.html">
+        <img src="../icons/exit-resume.svg" alt="exit"> <style>.icon {fill: var(--light-primary)}</style>
+    </a>
+
+    <div class="resume">
+        <h1>William Propp</h1>
+        <ul class="contact-info">
+            <li>23 Buena Vista Dr</li>
+            <li>Freedom, CA 95019</li>
+            <li>(650) 839-3184</li>
+            <li>william.c.propp@gmail.com</li>
+        </ul>
+        <a href="https://www.linkedin.com/in/william-propp-73b062151/">
+            <img class="linked-in" src="../icons/linked-in.svg" alt="linked-in">
+        </a>
+        <a href="https://github.com/williamPropp">
+            <img class="github" src="../icons/github.svg" alt="github">
+        </a>
+
+        <h2>SKILLS</h2>
+
+        <ul class="skills">
+            <li>Javascript</li>
+            <li>Familiar with HTML and CSS</li>
+            <li>Game Design &amp; UX</li>
+            <li>Adobe Suite Proficient</li>
+            <li>Github Experience</li>
+            <li>English, French, and Spanish</li>
+        </ul>
+
+        <h2>EXPERIENCE</h2>
+
+        <h3 class="employer">University of California, Santa Cruz <span class="dash">-</span><span class="job-title"> Grader / Tutor</span> </h3>
+        <p class="timeframe">JAN 2022 - PRESENT</p>
+        <ul class="job-duties">
+            <li>Tutoring students and Grading assignments for Computational Media 80K: Foundations of Video Game Design &amp; Computational Media 120: Game Development Experience</li>
+        </ul>
+
+        <h3 class="employer">City of Capitola, Capitola<span class="dash"> - </span><span class="job-title">Camp Leader</span> </h3>
+        <p class="timeframe">JUN 2021 - AUG 2021</p>
+        <ul class="job-duties">
+            <li>Childcare, Teaching, Activity Planning</li>
+        </ul>
+
+        <h3 class="employer">Pajaro Valley Unified School District, Watsonville<span class="dash"> - </span><span class="job-title">Covid-19 Monitor</span> </h3>
+        <p class="timeframe">APR 2021 - JUN 2021</p>
+        <ul class="job-duties">
+            <li>Checking Temperatures, Ensuring Compliance with Covid-19 Protocols</li>
+        </ul>
+
+        <h3 class="employer">Safeway, Santa Cruz<span class="dash"> - </span><span class="job-title">Cashier</span> </h3>
+        <p class="timeframe">OCT 2019 - DEC 2019</p>
+        <ul class="job-duties">
+            <li>Operating POS System, Bagging, Stocking, Customer Service</li>
+        </ul>
+
+        <h2>EDUCATION</h2>
+
+        <h3 class="employer">University of California, Santa Cruz<span class="dash"> - </span><span class="job-title">B.A. in Art &amp; Design: Games &amp; Playable Media</span> </h3>
+        <p class="timeframe">SEP 2017 - JUN 2022</p>
+        <ul class="job-duties">
+            <li>Events Coordinator for the Information Systems Management Association</li>
+        </ul>
+
+        <h3 class="employer">French American International High School, San Francisco<span class="dash"> - </span><span class="job-title">High School & I.B. Diploma</span> </h3>
+        <p class="timeframe">AUG 2013 - JUN 2017</p>
+        <ul class="job-duties">
+            <li>Founder of Hiking Club and Design Club</li>
+        </ul>
+    </div>
+</body>
+
+</html>
